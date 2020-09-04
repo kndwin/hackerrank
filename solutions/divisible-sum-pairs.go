@@ -1,9 +1,7 @@
-// Complete the divisibleSumPairs function below.
-
+// O(n^2) notation
 func divisibleSumPairs(n int32, k int32, ar []int32) int32 {
     i := int32(0)
     ans := int32(0)
-
     for i < n {
         j := int32(0)
         curr := ar[i]
@@ -16,6 +14,5 @@ func divisibleSumPairs(n int32, k int32, ar []int32) int32 {
         }
         i++
     }
-
     return ans;
 }
